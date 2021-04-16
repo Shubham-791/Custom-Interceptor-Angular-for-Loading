@@ -1,0 +1,7 @@
+<p *ngIf="loaderService.isLoading | async">
+  Loading!
+</p>
+<p *ngIf="!(loaderService.isLoading | async)">
+  Not Loading!
+</p>
+<button (click)="loadSomething()">Load Something</button>
